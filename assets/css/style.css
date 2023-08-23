@@ -76,11 +76,22 @@ body {
     height: calc(100vh -90px);
  }
 
- .container .sidebar {
+ .container .main-content .sidebar {
+    flex-direction: column;
+    justify-content: space-between;
     width: 225px;
     /* !ALTEZZA PROVVISORIA */
     height: 700px;
  }
+
+ .container .main-content .sidebar .menu-up {
+    height: 100%;
+ }
+
+ .container .main-content .sidebar .menu-down {
+    height: 90px;
+ }
+
  /* /Main Content */
 
 
