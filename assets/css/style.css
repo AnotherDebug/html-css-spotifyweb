@@ -65,7 +65,34 @@ body {
     SITE SECTIONS
  ************************************************/
 
+ /* CONTAINER */
+ .container {
+    flex-direction: column;
+    justify-content: space-between;
+ }
 
+ /* Main Content */
+ .container .main-content {
+    height: calc(100vh -90px);
+ }
+
+ .container .sidebar {
+    width: 225px;
+    /* !ALTEZZA PROVVISORIA */
+    height: 700px;
+ }
+ /* /Main Content */
+
+
+
+
+ /* Player */
+ .container .player {
+    height: 90px;
+ }
+ /* /Player */
+
+ /* /CONTAINER */
 
 
 /************************************************
