@@ -97,6 +97,18 @@ body {
     height: calc(100vh - 90px);
     width: calc(100% - 225px);
     overflow-y: scroll;
+    overflow: auto;
+}
+
+.container .main-content .content .topbar-fixed {
+    position: fixed;
+    width: calc(100% - 225px);
+    height: 90px;
+    text-align: end;
+}
+
+.container .main-content .content .topbar {
+    margin-top: 90px;
 }
 /* /Content */
 
