@@ -92,6 +92,10 @@ body {
     height: 90px;
  }
 
+ .container .main-content .sidebar .menu-down .install, .user{
+    height: 50%;
+ }
+
  /* /Main Content */
 
 
