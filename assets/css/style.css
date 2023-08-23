@@ -52,12 +52,11 @@ body {
 /* BUTTONS */
 
 .btn {
-    background-color: var(--white-color);
     padding: 10px 25px;
     display: inline-block;
-    color: black;
     border-radius: 20px;
     text-align: center;
+    border: 1px solid black;
 }
 
 /* /BUTTONS */
@@ -74,8 +73,6 @@ body {
 /* MAIN CONTENT */
 
 /* Sidebar */
-.container .main-content .sidebar {}
-
 .container .main-content .sidebar .menu-up {
     width: 225px;
 }
@@ -83,10 +80,12 @@ body {
 .container .main-content .sidebar .menu-up .playlist {
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .container .main-content .sidebar .menu-up .playlist .list {
-    height: calc(100vh - 180px);
+    /* !VALORE NON DEFINITO */
+    height: calc(100vh - 225px);
     overflow-y: scroll;
     overflow: auto;
 }
@@ -114,7 +113,6 @@ body {
     position: fixed;
     width: calc(100% - 225px);
     height: 90px;
-    text-align: end;
 }
 
 .container .main-content .content .topbar {
@@ -200,7 +198,6 @@ body {
 @media screen and (max-width: 992px) {
     .container .main-content .content .played .cards .card {
         width: calc(100% / 4);
-        height: 170px;
     }
 }
 
@@ -230,7 +227,6 @@ body {
     @media screen and (max-width: 992px) {
         .container .main-content .content .played .cards .card {
             width: calc(100% / 2);
-            height: 170px;
         }
     }
 
