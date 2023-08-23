@@ -82,6 +82,14 @@ body {
 .container .main-content .sidebar .menu-up {
     height: 100%;
 }
+
+.container .main-content .sidebar .menu-down {
+    height: 90px;
+}
+
+.container .main-content .sidebar .menu-down .install, .user {
+    height: 50%;
+}
 /* /Sidebar */
 
 /* Content */
