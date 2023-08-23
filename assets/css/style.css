@@ -87,9 +87,11 @@ body {
     height: 90px;
 }
 
-.container .main-content .sidebar .menu-down .install, .user {
+.container .main-content .sidebar .menu-down .install,
+.user {
     height: 50%;
 }
+
 /* /Sidebar */
 
 /* Content */
@@ -126,6 +128,19 @@ body {
 .container .main-content .content .topbar .menu ul li a {
     text-decoration: none;
 }
+
+.container .main-content .content .played .cards {
+    flex-wrap: wrap;
+}
+
+.container .main-content .content .played .cards .card {
+    width: calc(100% / 6);
+    height: 170px;
+    background-color: violet;
+    border: 1px solid black;
+}
+
+
 /* /Content */
 
 
@@ -141,12 +156,15 @@ body {
     height: 100%;
 }
 
-.container .player .menu .menu-left, .menu-center, .menu-right {
+.container .player .menu .menu-left,
+.menu-center,
+.menu-right {
     align-items: center;
     justify-content: center;
 }
 
-.container .player .menu .menu-left, .menu-right {
+.container .player .menu .menu-left,
+.menu-right {
     width: 30%;
 }
 
