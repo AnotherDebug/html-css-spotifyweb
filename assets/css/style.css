@@ -135,6 +135,25 @@ body {
 .container .player {
     height: 90px;
 }
+
+.container .player .menu {
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container .player .menu .menu-left, .menu-center, .menu-right {
+    align-items: center;
+    justify-content: center;
+}
+
+.container .player .menu .menu-left, .menu-right {
+    width: 30%;
+}
+
+.container .player .menu .menu-center {
+    width: 40%;
+}
+
 /* /PLAYER */
 
 /* /CONTAINER */
