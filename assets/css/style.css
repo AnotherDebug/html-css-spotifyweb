@@ -148,7 +148,6 @@ body {
     border: 1px solid black;
 }
 
-
 /* /Content */
 
 
@@ -204,6 +203,7 @@ body {
         height: 170px;
     }
 }
+
 /* /content */
 
 /* /MAIN CONTENT */
@@ -233,6 +233,7 @@ body {
             height: 170px;
         }
     }
+
     /* /content */
 
 
@@ -257,6 +258,26 @@ body {
     /* CONTAINER */
 
     /* MAIN CONTENT */
+
+    /* sidebar */
+    .container .main-content .sidebar .menu-up {
+        width: 50px;
+    }
+
+    /* /sidebar */
+
+    /* Content */
+    .container .main-content .content {
+        width: calc(100% - 50px);
+    }
+
+    .container .main-content .content .topbar-fixed {
+        width: calc(100% - 50px);
+        height: 90px;
+    }
+    /* /Content */
+
+
     /* /MAIN CONTENT */
 
     /* PLAYER */
