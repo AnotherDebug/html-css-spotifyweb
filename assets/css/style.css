@@ -1,0 +1,98 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* COLORS */
+:root {
+    --white-color: #ffffff;
+}
+
+/* /COLORS */
+
+
+
+
+/************************************************
+    UTILITIES
+ ************************************************/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+/* todo: inserire qui row,col,text */
+
+/* !"DEBUG" DA ELIMINARE TERMINATO IL CODICE*/
+.debug {
+    background-color: rgba(0, 102, 255, 0.5);
+    border: 1px solid #000;
+}
+
+
+/* BUTTONS */
+
+.btnr {
+    background-color: var(--white-color);
+    padding: 10px 25px;
+    display: inline-block;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* /BUTTONS */
+
+
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+
+
+
+
+/************************************************
+    RESPONSIVE
+ ************************************************/
+
+/* SOLUZIONE DESKTOP FIRST */
+
+/* breakpoint lg */
+@media screen and (max-width: 992px) {}
+
+/* /breakpoint lg */
+
+
+
+
+
+/* breakpoint md */
+@media screen and (max-width: 768px) {}
+
+/* /breakpoint md */
+
+
+
+
+
+/* breakpoint sm */
+@media screen and (max-width: 576px) {}
+
+/* /breakpoint sm */
