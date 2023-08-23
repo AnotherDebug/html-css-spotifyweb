@@ -110,6 +110,22 @@ body {
 .container .main-content .content .topbar {
     margin-top: 90px;
 }
+
+.container .main-content .content .topbar .menu ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .main-content .content .topbar .menu ul li {
+    list-style: none;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container .main-content .content .topbar .menu ul li a {
+    text-decoration: none;
+}
 /* /Content */
 
 
