@@ -75,15 +75,25 @@ body {
 
 /* Sidebar */
 .container .main-content .sidebar {
-    flex-direction: column;
-    width: 225px;
+
 }
 
 .container .main-content .sidebar .menu-up {
-    height: 100%;
+    width: 225px;
 }
 
-.container .main-content .sidebar .menu-down {
+.container .main-content .sidebar .menu-up .playlist {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list{
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+    overflow: auto;
+}
+
+.container .main-content .sidebar .menu-up .playlist .menu-down {
     height: 90px;
 }
 
