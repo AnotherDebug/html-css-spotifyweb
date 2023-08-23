@@ -74,9 +74,7 @@ body {
 /* MAIN CONTENT */
 
 /* Sidebar */
-.container .main-content .sidebar {
-
-}
+.container .main-content .sidebar {}
 
 .container .main-content .sidebar .menu-up {
     width: 225px;
@@ -87,7 +85,7 @@ body {
     justify-content: space-between;
 }
 
-.container .main-content .sidebar .menu-up .playlist .list{
+.container .main-content .sidebar .menu-up .playlist .list {
     height: calc(100vh - 180px);
     overflow-y: scroll;
     overflow: auto;
@@ -194,7 +192,27 @@ body {
 /* SOLUZIONE DESKTOP FIRST */
 
 /* breakpoint lg */
-@media screen and (max-width: 992px) {}
+
+/* CONTAINER */
+
+/* MAIN CONTENT */
+
+/* content */
+@media screen and (max-width: 992px) {
+    .container .main-content .content .played .cards .card {
+        width: calc(100% / 4);
+        height: 170px;
+    }
+}
+/* /content */
+
+/* /MAIN CONTENT */
+
+/* PLAYER */
+/* /PLAYER */
+
+/* /CONTAINER */
+
 
 /* /breakpoint lg */
 
@@ -203,7 +221,30 @@ body {
 
 
 /* breakpoint md */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    /* CONTAINER */
+
+
+    /* MAIN CONTENT */
+    /* content */
+    @media screen and (max-width: 992px) {
+        .container .main-content .content .played .cards .card {
+            width: calc(100% / 2);
+            height: 170px;
+        }
+    }
+    /* /content */
+
+
+    /* /MAIN CONTENT */
+
+
+    /* PLAYER */
+    /* /PLAYER */
+
+
+    /* /CONTAINER */
+}
 
 /* /breakpoint md */
 
@@ -212,6 +253,16 @@ body {
 
 
 /* breakpoint sm */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    /* CONTAINER */
+
+    /* MAIN CONTENT */
+    /* /MAIN CONTENT */
+
+    /* PLAYER */
+    /* /PLAYER */
+
+    /* /CONTAINER */
+}
 
 /* /breakpoint sm */
