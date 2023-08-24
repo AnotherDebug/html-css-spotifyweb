@@ -235,6 +235,7 @@ svg {
 .container .main-content .content .topbar-fixed .button a {
     text-decoration: none;
     color: var(--white-color);
+    font-size: 12px;
 }
 
 .container .main-content .content .topbar {
@@ -256,6 +257,7 @@ svg {
 .container .main-content .content .topbar .menu ul li a {
     text-decoration: none;
     color: var(--gray-color);
+    font-size: 12px;
 }
 
 /* played */
