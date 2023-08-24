@@ -509,8 +509,8 @@ svg {
 
     /* /tips */
 
-     /* artists */
-     .container .main-content .content .artists .cards .card {
+    /* artists */
+    .container .main-content .content .artists .cards .card {
         width: calc(100% / 2);
     }
 
@@ -544,6 +544,33 @@ svg {
     /* sidebar */
     .container .main-content .sidebar .menu-up {
         width: 50px;
+        padding: 0 10px;
+    }
+
+    .container .main-content .sidebar .menu-up .logo .title{
+        display: none;
+    }
+
+    .container .main-content .sidebar .menu-up .home ul li {
+        justify-content: center;
+    }
+
+    .container .main-content .sidebar .menu-up .home ul li a{
+        display: none;
+    }
+
+    .container .main-content .sidebar .menu-up .playlist .list ul {
+        display: none;
+    }
+
+    .container .main-content .sidebar .menu-down {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .main-content .sidebar .menu-down .install a, .menu-down .user a {
+        display: none;
     }
 
     /* /sidebar */
