@@ -214,7 +214,15 @@ svg {
 
 .container .main-content .sidebar .menu-down .install a {
     color: gray;
+    font-weight: 600;
 }
+
+/* HOVER MENU DOWN */
+.container .main-content .sidebar .menu-down .install a:hover {
+    color:var(--white-color);
+}
+
+/* /HOVER MENU DOWN */
 
 .container .main-content .sidebar .menu-down .user a {
     color: var(--white-color);
