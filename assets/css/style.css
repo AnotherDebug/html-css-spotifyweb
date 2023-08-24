@@ -137,8 +137,9 @@ svg {
     overflow: auto;
 }
 
-.container .main-content .sidebar .menu-up .playlist .list h4{
-    padding: 10px 0;
+.container .main-content .sidebar .menu-up .playlist .list h4 {
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li i {
@@ -151,12 +152,14 @@ svg {
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li p {
-    padding: 10px 0;
+    margin-bottom: 20px;
     color: gray;
+    cursor: pointer;
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2) p {
     padding-left: 10px;
+    margin-bottom: 0;
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(3) p {
@@ -167,10 +170,42 @@ svg {
     height: 90px;
 }
 
+/* menu down */
 .container .main-content .sidebar .menu-down .install,
 .user {
     height: 50%;
+    align-items: center;
 }
+
+.container .main-content .sidebar .menu-down .user {
+    align-items: flex-end;
+    padding-bottom: 5px;
+    border-top: 1px solid gray;
+}
+
+.container .main-content .sidebar .menu-down .user svg {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.container .main-content .sidebar .menu-down .install a,
+.user a {
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.container .main-content .sidebar .menu-down .install a {
+    color: gray;
+}
+
+.container .main-content .sidebar .menu-down .user a {
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+/* /menu down */
 
 /* /Sidebar */
 
