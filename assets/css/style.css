@@ -63,6 +63,7 @@ svg {
     border-radius: 20px;
     text-align: center;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 /* /BUTTONS */
@@ -78,6 +79,7 @@ svg {
 .container {
     background-color: #000;
 }
+
 /* MAIN CONTENT */
 
 /* Sidebar */
@@ -131,10 +133,34 @@ svg {
 }
 
 .container .main-content .sidebar .menu-up .playlist .list {
-    /* !VALORE NON DEFINITO */
-    height: calc(100vh - 225px);
-    overflow-y: scroll;
+    height: calc(100vh - 385px);
     overflow: auto;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list h4{
+    padding: 10px 0;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li i {
+    font-size: 50px;
+    color: gray;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2) {
+    align-items: center;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li p {
+    padding: 10px 0;
+    color: gray;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2) p {
+    padding-left: 10px;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(3) p {
+    padding-top: 20px;
 }
 
 .container .main-content .sidebar .menu-up .playlist .menu-down {
@@ -159,6 +185,8 @@ svg {
 .container .main-content .content .topbar-fixed {
     position: fixed;
     width: calc(100% - 225px);
+    top: 0;
+    right: 0;
     height: 90px;
     align-items: center;
     justify-content: flex-end;
@@ -232,11 +260,6 @@ svg {
 .menu-right {
     align-items: center;
     justify-content: center;
-}
-
-.container .player .menu .menu-left,
-.menu-right {
-    width: 30%;
 }
 
 .container .player .menu .menu-center {
@@ -337,6 +360,7 @@ svg {
         width: calc(100% - 50px);
         height: 90px;
     }
+
     /* /Content */
 
 
