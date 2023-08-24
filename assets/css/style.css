@@ -115,6 +115,14 @@ svg {
     color: lightgray;
 }
 
+/* HOVER HOME */
+.container .main-content .sidebar .menu-up .home ul li a:hover {
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+/* /HOVER HOME */
+
 .container .main-content .sidebar .menu-up .playlist {
     flex-direction: column;
     justify-content: space-between;
@@ -136,6 +144,24 @@ svg {
     color: gray;
 }
 
+/* HOVER PLAYLIST */
+.container .main-content .sidebar .menu-up .playlist .list ul li i:hover {
+    color: var(--white-color);
+}
+.container .main-content .sidebar .menu-up .playlist .list ul li p:hover {
+    color: var(--white-color);
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2):hover i {
+    color: inherit;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2):hover p {
+    color: inherit;
+}
+
+/* /HOVER PLAYLIST */
+
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2) {
     align-items: center;
 }
@@ -144,6 +170,7 @@ svg {
     margin-bottom: 20px;
     color: gray;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2) p {
