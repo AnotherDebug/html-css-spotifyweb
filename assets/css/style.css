@@ -289,13 +289,13 @@ svg {
     color: var(--white-color);
 }
 
-.container .main-content .content .played .cards .card a h3 {
+.container .main-content .content .played .cards .card a h5 {
     padding: 10px 0;
 }
 
 .container .main-content .content .played .cards .card a p {
     color: gray;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 /* /played */
@@ -309,6 +309,10 @@ svg {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 10px;
+}
+
+.container .main-content .content .tips .title p {
+    padding-top: 10px;
 }
 
 .container .main-content .content .tips .cards {
@@ -331,18 +335,18 @@ svg {
     color: var(--white-color);
 }
 
-.container .main-content .content .tips .cards .card a h3 {
+.container .main-content .content .tips .cards .card a h5 {
     padding: 10px 0;
 }
 
 .container .main-content .content .tips .title p {
     color: gray;
-    font-size: 15px;
+    font-size: 10px
 }
 
 .container .main-content .content .tips .cards .card a p {
     color: gray;
-    font-size: 15px;
+    font-size: 10px
 }
 
 /* /tips */
@@ -356,6 +360,10 @@ svg {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 10px;
+}
+
+.container .main-content .content .artists .title p {
+    padding-top: 10px;
 }
 
 .container .main-content .content .artists .cards {
@@ -379,18 +387,18 @@ svg {
     color: var(--white-color);
 }
 
-.container .main-content .content .artists .cards .card a h3 {
+.container .main-content .content .artists .cards .card a h5 {
     padding: 10px 0;
 }
 
 .container .main-content .content .artists .title p {
     color: gray;
-    font-size: 15px;
+    font-size: 10px
 }
 
 .container .main-content .content .artists .cards .card a p {
     color: gray;
-    font-size: 15px;
+    font-size: 10px
 }
 
 /* /artists */
@@ -454,6 +462,13 @@ svg {
 
     /* /tips */
 
+    /* artists */
+    .container .main-content .content .artists .cards .card {
+        width: calc(100% / 4);
+    }
+
+    /* /artists */
+
     /* /content */
 
     /* /MAIN CONTENT */
@@ -491,6 +506,13 @@ svg {
     }
 
     /* /tips */
+
+     /* artists */
+     .container .main-content .content .artists .cards .card {
+        width: calc(100% / 2);
+    }
+
+    /* /artists */
 
     /* /content */
 
