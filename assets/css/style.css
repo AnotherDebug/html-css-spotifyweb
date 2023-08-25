@@ -329,24 +329,27 @@ svg {
     width: 100%;
 }
 
-.container .main-content .content .played .cards .card a .img {
-    position: relative;
-}
 
 /* HOVER PLAYED */
-.container .main-content .content .played .cards .card a .img i {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 50px;
-    background-color: rgba(0, 0, 0, 0.500);
-    padding: 45px;
-    display: none;
+.container .main-content .content .played .cards .card a .img {
+   position: relative;
 }
 
 .container .main-content .content .played .cards .card a .img:hover i {
-    display: block;
+   display: block;
 }
+
+.container .main-content .content .played .cards .card a .img i {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 300%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.441);
+  padding: 43%;
+}
+
 
 /* /HOVER PLAYED */
 
