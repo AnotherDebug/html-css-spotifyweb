@@ -634,7 +634,26 @@ svg {
 
 /* MENU CENTER */
 .container .player .menu .menu-center {
+    flex-direction: column;
     width: 40%;
+}
+
+.container .player .menu .menu-center .commands {
+    align-items: center;
+    gap: 25px;
+}
+
+.container .player .menu .menu-center .commands a{
+   color: var(--white-color);
+   text-decoration: none;
+}
+
+.container .player .menu .menu-center .commands .play i {
+    font-size: 35px;
+}
+
+.container .player .menu .menu-center .commands .shuffle i, .backward i, .forward i, .repeat i {
+    font-size: 20px;
 }
 
 /* MENU CENTER */
