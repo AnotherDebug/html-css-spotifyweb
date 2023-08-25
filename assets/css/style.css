@@ -54,7 +54,7 @@ svg {
     border: 1px solid #000;
 }
 
-
+/* !CONTROLLARE SE VA IN HOVER O ACTIVE */
 .active:hover {
     border-left: 3px solid #adff2e;
     margin-right: -3px;
@@ -138,6 +138,7 @@ svg {
 .container .main-content .sidebar .menu-up .playlist .list {
     height: calc(100vh - 385px);
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .container .main-content .sidebar .menu-up .playlist .list h4 {
@@ -188,9 +189,6 @@ svg {
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2) p {
     padding-left: 10px;
     margin-bottom: 0;
-}
-
-.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(3) p {
 }
 
 .container .main-content .sidebar .menu-up .playlist .menu-down {
@@ -306,6 +304,23 @@ svg {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: relative;
+}
+
+.container .main-content .content .topbar .menu ul li a:after {
+    position: absolute;
+    top: 50%;
+    right:50%;
+    transform: translate(20%, -20%);
+    font: var(--fa-font-solid);
+    content: '\2014';
+    color:  #adff2e;
+    font-size: 30px;
+    display: none;
+}
+
+.container .main-content .content .topbar .menu ul li:hover a::after {
+    display: block;
 }
 
 .container .main-content .content .topbar .menu ul li a {
