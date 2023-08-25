@@ -407,6 +407,28 @@ svg {
     color: var(--white-color);
 }
 
+/* HOVER TIPS */
+.container .main-content .content .tips .cards .card a .img {
+    position: relative;
+ }
+ 
+ .container .main-content .content .tips .cards .card a .img:hover i {
+    display: block;
+ }
+ 
+ .container .main-content .content .tips .cards .card a .img i {
+   position: absolute;
+   top: 49%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 300%;
+   display: none;
+   background-color: rgba(0, 0, 0, 0.441);
+   padding: 43%;
+ }
+ 
+ /* /HOVER TIPS */
+
 .container .main-content .content .tips .cards .card a h5 {
     padding: 10px 0;
 }
