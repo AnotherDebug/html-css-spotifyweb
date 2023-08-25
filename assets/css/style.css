@@ -669,11 +669,17 @@ svg {
     padding: 0 20px;
 }
 
+.container .player .menu .menu-center .progress-bar .local-time p, .total-time p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
 
 /* bar */
 
 .container .player .menu .menu-center .progress-bar {
     width: 100%;
+    margin-top: 10px;
 }
 
 .container .player .menu .menu-center .progress-bar .bar {
