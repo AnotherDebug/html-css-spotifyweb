@@ -307,6 +307,7 @@ svg {
     position: relative;
 }
 
+/* HOVER TOPBAR */
 .container .main-content .content .topbar .menu ul li a:after {
     position: absolute;
     top: 50%;
@@ -322,6 +323,9 @@ svg {
 .container .main-content .content .topbar .menu ul li:hover a::after {
     display: block;
 }
+
+/* HOVER TOPBAR */
+
 
 .container .main-content .content .topbar .menu ul li a {
     text-decoration: none;
@@ -375,13 +379,13 @@ svg {
 
 .container .main-content .content .played .cards .card a .img i {
   position: absolute;
-  top: 49%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 300%;
   display: none;
   background-color: #1618228a;
-  padding: 40%;
+  padding: 45%;
 }
 
 
@@ -396,7 +400,7 @@ svg {
 }
 
 .container .main-content .content .played .cards .card a h5 {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .container .main-content .content .played .cards .card a p {
@@ -452,19 +456,19 @@ svg {
  
  .container .main-content .content .tips .cards .card a .img i {
    position: absolute;
-   top: 49%;
+   top: 48%;
    left: 50%;
    transform: translate(-50%, -50%);
    font-size: 300%;
    display: none;
    background-color: #1618228a;
-   padding: 43%;
+   padding: 45%;
  }
  
  /* /HOVER TIPS */
 
 .container .main-content .content .tips .cards .card a h5 {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .container .main-content .content .tips .title p {
@@ -510,7 +514,7 @@ svg {
     border-radius: 50%;
 }
 
-/* HOVER TIPS */
+/* HOVER ARTISTS */
 .container .main-content .content .artists .cards .card a .img {
     position: relative;
  }
@@ -521,16 +525,17 @@ svg {
  
  .container .main-content .content .artists .cards .card a .img i {
    position: absolute;
-   top: 49%;
+   top: 48%;
    left: 50%;
    transform: translate(-50%, -50%);
    font-size: 300%;
    display: none;
    background-color: #1618228a;
-   padding: 40%;
+   border-radius: 50%;
+   padding: 45%;
  }
  
- /* /HOVER TIPS */
+ /* /HOVER ARTISTS */
 
 .container .main-content .content .artists .cards .card a {
     text-decoration: none;
@@ -538,7 +543,7 @@ svg {
 }
 
 .container .main-content .content .artists .cards .card a h5 {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .container .main-content .content .artists .title p {
@@ -576,9 +581,67 @@ svg {
     justify-content: center;
 }
 
+/* MENU LEFT */
+.container .player .menu .menu-left {
+    align-items: center;
+}
+
+/* img */
+.container .player .menu .menu-left .album .img {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+.container .player .menu .menu-left .album .img img {
+    width: 100%;
+}
+/* img */
+
+/* text */
+.container .player .menu .menu-left .album .text {
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .player .menu .menu-left .album .text p:first-child{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container .player .menu .menu-left .album .text p:last-child{
+    font-size: 11px;
+    color: gray;
+}
+
+/* /text */
+
+/* favorite  */
+.container .player .menu .menu-left .favorite {
+    margin-left: 15px;
+}
+
+.container .player .menu .menu-left .favorite .heart, .folder {
+    padding: 10px;
+}
+
+.container .player .menu .menu-left .favorite .heart i, .folder i {
+    color: gray;
+}
+/* /favorite  */
+
+/* /MENU LEFT */
+
+/* MENU CENTER */
 .container .player .menu .menu-center {
     width: 40%;
 }
+
+/* MENU CENTER */
+
+
+/* MENU RIGHT */
+/* /MENU RIGHT */
 
 /* /PLAYER */
 
@@ -692,6 +755,9 @@ svg {
     /* sidebar */
     .container .main-content .sidebar .menu-up {
         width: 50px;
+    }
+
+    .container .main-content .sidebar .menu-up .logo {
         padding: 0 10px;
     }
 
@@ -701,6 +767,7 @@ svg {
 
     .container .main-content .sidebar .menu-up .home ul li {
         justify-content: center;
+        padding: 5px 10px;
     }
 
     .container .main-content .sidebar .menu-up .home ul li a {
@@ -715,6 +782,14 @@ svg {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .container .main-content .sidebar .menu-down .install {
+        padding: 0 10px;
+    }
+
+    .container .main-content .sidebar .menu-down .user {
+        padding: 5px 10px;
     }
 
     .container .main-content .sidebar .menu-down .install a,
