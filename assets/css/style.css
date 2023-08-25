@@ -55,6 +55,10 @@ svg {
 }
 
 
+.active:hover {
+    border-left: 3px solid #adff2e;
+    margin-right: -3px;
+}
 
 
 
@@ -74,12 +78,12 @@ svg {
 /* Sidebar */
 .container .main-content .sidebar .menu-up {
     width: 225px;
-    padding-left: 30px;
 }
 
 .container .main-content .sidebar .menu-up .logo {
     align-items: center;
     height: 90px;
+    padding-left: 30px;
 }
 
 .container .main-content .sidebar .menu-up .logo img {
@@ -102,7 +106,8 @@ svg {
 
 .container .main-content .sidebar .menu-up .home ul li {
     align-items: center;
-    padding-bottom: 10px;
+    padding: 5px 0;
+    padding-left: 30px;
 }
 
 .container .main-content .sidebar .menu-up .home ul li img {
@@ -113,6 +118,7 @@ svg {
     text-decoration: none;
     padding-left: 10px;
     color: lightgray;
+    color: inherit;
 }
 
 /* HOVER HOME */
@@ -136,6 +142,12 @@ svg {
 
 .container .main-content .sidebar .menu-up .playlist .list h4 {
     padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li {
+    padding-left: 30px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -168,7 +180,6 @@ svg {
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li p {
-    margin-bottom: 20px;
     color: gray;
     cursor: pointer;
     font-weight: 600;
@@ -180,7 +191,6 @@ svg {
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(3) p {
-    padding-top: 20px;
 }
 
 .container .main-content .sidebar .menu-up .playlist .menu-down {
@@ -207,6 +217,10 @@ svg {
     border-radius: 50%;
 }
 
+.container .main-content .sidebar .menu-down .install {
+    padding-left: 30px;
+}
+
 .container .main-content .sidebar .menu-down .install a,
 .user a {
     padding-left: 10px;
@@ -225,6 +239,10 @@ svg {
 
 /* /HOVER MENU DOWN */
 
+.container .main-content .sidebar .menu-down .user {
+    padding-left: 30px;
+}
+
 .container .main-content .sidebar .menu-down .user a {
     color: var(--white-color);
     font-weight: 600;
@@ -240,6 +258,7 @@ svg {
     width: calc(100% - 225px);
     overflow-y: scroll;
     overflow: auto;
+    background-color: #161822;
 }
 
 .container .main-content .content .topbar-fixed {
@@ -251,6 +270,7 @@ svg {
     align-items: center;
     justify-content: flex-end;
     background-color: #00000098;
+    z-index: 999;
 }
 
 .container .main-content .content .topbar-fixed .button a {
@@ -272,7 +292,6 @@ svg {
 }
 
 /* /HOVER BUTTON */
-
 .container .main-content .content .topbar {
     margin-top: 90px;
 }
@@ -346,8 +365,8 @@ svg {
   transform: translate(-50%, -50%);
   font-size: 300%;
   display: none;
-  background-color: rgba(0, 0, 0, 0.441);
-  padding: 43%;
+  background-color: #1618228a;
+  padding: 40%;
 }
 
 
@@ -423,7 +442,7 @@ svg {
    transform: translate(-50%, -50%);
    font-size: 300%;
    display: none;
-   background-color: rgba(0, 0, 0, 0.441);
+   background-color: #1618228a;
    padding: 43%;
  }
  
@@ -492,8 +511,8 @@ svg {
    transform: translate(-50%, -50%);
    font-size: 300%;
    display: none;
-   background-color: rgba(0, 0, 0, 0.441);
-   padding: 43%;
+   background-color: #1618228a;
+   padding: 40%;
  }
  
  /* /HOVER TIPS */
