@@ -638,6 +638,8 @@ svg {
     width: 40%;
 }
 
+
+/* commands */
 .container .player .menu .menu-center .commands {
     align-items: center;
     gap: 25px;
@@ -655,6 +657,19 @@ svg {
 .container .player .menu .menu-center .commands .shuffle i, .backward i, .forward i, .repeat i {
     font-size: 20px;
 }
+
+/* /commands */
+
+/* progress bar */
+.container .player .menu .menu-center .progress-bar {
+    align-items: center;
+}
+
+.container .player .menu .menu-center .progress-bar .local-time, .total-time {
+    padding: 0 20px;
+}
+/* /progress bar */
+
 
 /* MENU CENTER */
 
