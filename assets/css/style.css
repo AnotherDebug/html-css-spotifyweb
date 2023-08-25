@@ -148,6 +148,7 @@ svg {
 .container .main-content .sidebar .menu-up .playlist .list ul li i:hover {
     color: var(--white-color);
 }
+
 .container .main-content .sidebar .menu-up .playlist .list ul li p:hover {
     color: var(--white-color);
 }
@@ -219,7 +220,7 @@ svg {
 
 /* HOVER MENU DOWN */
 .container .main-content .sidebar .menu-down .install a:hover {
-    color:var(--white-color);
+    color: var(--white-color);
 }
 
 /* /HOVER MENU DOWN */
@@ -299,6 +300,7 @@ svg {
 .container .main-content .content .topbar .menu ul li a:hover {
     color: var(--white-color);
 }
+
 /* /HOVER TOPBAR */
 
 /* played */
@@ -326,6 +328,30 @@ svg {
 .container .main-content .content .played .cards .card img {
     width: 100%;
 }
+
+.container .main-content .content .played .cards .card a .img {
+    position: relative;
+}
+
+/* HOVER PLAYED */
+.container .main-content .content .played .cards .card a .img i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 45px;
+    display: none;
+}
+
+.container .main-content .content .played .cards .card a .img:hover i {
+    display: block;
+}
+
+/* /HOVER PLAYED */
+
+
+
 
 .container .main-content .content .played .cards .card a {
     text-decoration: none;
@@ -588,7 +614,7 @@ svg {
         padding: 0 10px;
     }
 
-    .container .main-content .sidebar .menu-up .logo .title{
+    .container .main-content .sidebar .menu-up .logo .title {
         display: none;
     }
 
@@ -596,7 +622,7 @@ svg {
         justify-content: center;
     }
 
-    .container .main-content .sidebar .menu-up .home ul li a{
+    .container .main-content .sidebar .menu-up .home ul li a {
         display: none;
     }
 
@@ -610,7 +636,8 @@ svg {
         align-items: center;
     }
 
-    .container .main-content .sidebar .menu-down .install a, .menu-down .user a {
+    .container .main-content .sidebar .menu-down .install a,
+    .menu-down .user a {
         display: none;
     }
 
