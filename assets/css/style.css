@@ -311,11 +311,11 @@ svg {
 .container .main-content .content .topbar .menu ul li a:after {
     position: absolute;
     top: 50%;
-    right:50%;
+    right: 50%;
     transform: translate(20%, -20%);
     font: var(--fa-font-solid);
     content: '\2014';
-    color:  #adff2e;
+    color: #adff2e;
     font-size: 30px;
     display: none;
 }
@@ -370,22 +370,22 @@ svg {
 
 /* HOVER PLAYED */
 .container .main-content .content .played .cards .card a .img {
-   position: relative;
+    position: relative;
 }
 
 .container .main-content .content .played .cards .card a .img:hover i {
-   display: block;
+    display: block;
 }
 
 .container .main-content .content .played .cards .card a .img i {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 300%;
-  display: none;
-  background-color: #1618228a;
-  padding: 45%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    display: none;
+    background-color: #1618228a;
+    padding: 45%;
 }
 
 
@@ -448,24 +448,24 @@ svg {
 /* HOVER TIPS */
 .container .main-content .content .tips .cards .card a .img {
     position: relative;
- }
- 
- .container .main-content .content .tips .cards .card a .img:hover i {
+}
+
+.container .main-content .content .tips .cards .card a .img:hover i {
     display: block;
- }
- 
- .container .main-content .content .tips .cards .card a .img i {
-   position: absolute;
-   top: 48%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 300%;
-   display: none;
-   background-color: #1618228a;
-   padding: 45%;
- }
- 
- /* /HOVER TIPS */
+}
+
+.container .main-content .content .tips .cards .card a .img i {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    display: none;
+    background-color: #1618228a;
+    padding: 45%;
+}
+
+/* /HOVER TIPS */
 
 .container .main-content .content .tips .cards .card a h5 {
     padding: 15px 0;
@@ -517,25 +517,25 @@ svg {
 /* HOVER ARTISTS */
 .container .main-content .content .artists .cards .card a .img {
     position: relative;
- }
- 
- .container .main-content .content .artists .cards .card a .img:hover i {
+}
+
+.container .main-content .content .artists .cards .card a .img:hover i {
     display: block;
- }
- 
- .container .main-content .content .artists .cards .card a .img i {
-   position: absolute;
-   top: 48%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 300%;
-   display: none;
-   background-color: #1618228a;
-   border-radius: 50%;
-   padding: 45%;
- }
- 
- /* /HOVER ARTISTS */
+}
+
+.container .main-content .content .artists .cards .card a .img i {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    display: none;
+    background-color: #1618228a;
+    border-radius: 50%;
+    padding: 45%;
+}
+
+/* /HOVER ARTISTS */
 
 .container .main-content .content .artists .cards .card a {
     text-decoration: none;
@@ -593,9 +593,11 @@ svg {
     height: 50px;
     margin-left: 10px;
 }
+
 .container .player .menu .menu-left .album .img img {
     width: 100%;
 }
+
 /* img */
 
 /* text */
@@ -603,16 +605,21 @@ svg {
     margin-left: 10px;
     flex-direction: column;
     justify-content: center;
-}
-
-.container .player .menu .menu-left .album .text p:first-child{
     font-size: 14px;
     font-weight: 600;
 }
 
-.container .player .menu .menu-left .album .text p:last-child{
+.container .player .menu .menu-left .album .text a {
+    text-decoration: none;
     font-size: 11px;
+    font-weight: 600;
     color: gray;
+}
+
+.container .player .menu .menu-left .album .text a:hover {
+    text-decoration: underline;
+    color: var(--white-color);
+    text-underline-offset: 2px;
 }
 
 /* /text */
@@ -622,13 +629,23 @@ svg {
     margin-left: 15px;
 }
 
-.container .player .menu .menu-left .favorite .heart, .folder {
+.container .player .menu .menu-left .favorite .heart,
+.folder {
     padding: 10px;
 }
 
-.container .player .menu .menu-left .favorite .heart i, .folder i {
+.container .player .menu .menu-left .favorite .heart i,
+.folder i {
     color: gray;
 }
+/* hover favorite */
+.container .player .menu .menu-left .favorite .heart i:hover,
+.folder i:hover {
+    color: var(--white-color);
+}
+
+/* hover favorite */
+
 /* /favorite  */
 
 /* /MENU LEFT */
@@ -646,27 +663,32 @@ svg {
     gap: 25px;
 }
 
-.container .player .menu .menu-center .commands a{
-   color: var(--white-color);
-   text-decoration: none;
+.container .player .menu .menu-center .commands a {
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 .container .player .menu .menu-center .commands .play i {
     font-size: 35px;
 }
 
-.container .player .menu .menu-center .commands .shuffle i, .backward i, .forward i, .repeat i {
+.container .player .menu .menu-center .commands .shuffle i,
+.backward i,
+.forward i,
+.repeat i {
     font-size: 20px;
 }
 
 /* /commands */
 
 /* progress bar */
-.container .player .menu .menu-center .progress-bar .local-time, .total-time {
+.container .player .menu .menu-center .progress-bar .local-time,
+.total-time {
     padding: 0 20px;
 }
 
-.container .player .menu .menu-center .progress-bar .local-time p, .total-time p {
+.container .player .menu .menu-center .progress-bar .local-time p,
+.total-time p {
     font-size: 13px;
     font-weight: 600;
 }
@@ -708,6 +730,7 @@ svg {
     width: 15%;
     padding: 0 10px;
 }
+
 .container .player .menu .menu-right i {
     padding: 0 10px;
 }
