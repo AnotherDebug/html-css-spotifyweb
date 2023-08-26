@@ -567,6 +567,7 @@ svg {
 /* PLAYER */
 .container .player {
     height: 90px;
+    background-color: #282828;
 }
 
 .container .player .menu {
@@ -590,7 +591,7 @@ svg {
 .container .player .menu .menu-left .album .img {
     width: 50px;
     height: 50px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .container .player .menu .menu-left .album .img img {
     width: 100%;
@@ -661,10 +662,6 @@ svg {
 /* /commands */
 
 /* progress bar */
-.container .player .menu .menu-center .progress-bar {
-    align-items: center;
-}
-
 .container .player .menu .menu-center .progress-bar .local-time, .total-time {
     padding: 0 20px;
 }
@@ -675,29 +672,29 @@ svg {
 }
 
 
-/* bar */
-
+/* time bar */
 .container .player .menu .menu-center .progress-bar {
+    align-items: center;
     width: 100%;
     margin-top: 10px;
 }
 
-.container .player .menu .menu-center .progress-bar .bar {
+.container .player .menu .menu-center .progress-bar .time-bar {
     width: 100%;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.516);
     padding: 1px;
     border-radius: 3px;
 }
 
 .fill {
     display: block;
-    height: 5px;
+    height: 4px;
     background-color: lightgray;
     border-radius: 3px;
     width: 25%;
 }
 
-/* bar */
+/* /time bar */
 
 /* /progress bar */
 
@@ -706,6 +703,38 @@ svg {
 
 
 /* MENU RIGHT */
+.container .player .menu .menu-right {
+    align-items: center;
+    width: 15%;
+    padding: 0 10px;
+}
+.container .player .menu .menu-right i {
+    padding: 0 10px;
+}
+
+/* volume bar */
+.container .player .menu .menu-right .progress-bar {
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.container .player .menu .menu-right .progress-bar .volume-bar {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.516);
+    padding: 1px;
+    border-radius: 3px;
+}
+
+.fill {
+    display: block;
+    height: 4px;
+    background-color: lightgray;
+    border-radius: 3px;
+    width: 15%;
+}
+
+/* /volume bar */
 /* /MENU RIGHT */
 
 /* /PLAYER */
