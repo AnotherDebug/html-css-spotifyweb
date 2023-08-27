@@ -785,7 +785,7 @@ svg {
 }
 
 /* hover volume bar */
-.container .player .menu .menu-right .progress-bar .volume-bar .progress .fill .point {
+.container .player .menu .menu-right .progress-bar .volume-bar .progress .point {
     width: 15px;
     height: 15px;
     background-color: var(--white-color);
