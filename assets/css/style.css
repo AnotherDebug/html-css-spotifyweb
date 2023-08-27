@@ -335,7 +335,7 @@ svg {
 }
 
 /* HOVER TOPBAR */
-.container .main-content .content .topbar .menu ul li a:hover {
+.container .main-content .content .topbar .menu ul li:hover a{
     color: var(--white-color);
 }
 
