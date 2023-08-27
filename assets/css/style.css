@@ -57,7 +57,6 @@ svg {
 /* !CONTROLLARE SE VA IN HOVER O ACTIVE */
 .active:hover {
     border-left: 3px solid #adff2e;
-    margin-right: -3px;
 }
 
 
@@ -110,6 +109,10 @@ svg {
     padding-left: 30px;
 }
 
+.container .main-content .sidebar .menu-up .home ul li:hover {
+    padding-left: 27px;
+}
+
 .container .main-content .sidebar .menu-up .home ul li img {
     width: 25px;
 }
@@ -118,11 +121,11 @@ svg {
     text-decoration: none;
     padding-left: 10px;
     color: lightgray;
-    color: inherit;
+    font-weight: 600;
 }
 
 /* HOVER HOME */
-.container .main-content .sidebar .menu-up .home ul li a:hover {
+.container .main-content .sidebar .menu-up .home ul li:hover a {
     color: var(--white-color);
     font-weight: 600;
 }
@@ -158,11 +161,21 @@ svg {
 }
 
 /* HOVER PLAYLIST */
-.container .main-content .sidebar .menu-up .playlist .list ul li i:hover {
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:hover {
     color: var(--white-color);
+    padding-left: 27px;
 }
 
-.container .main-content .sidebar .menu-up .playlist .list ul li p:hover {
+.container .main-content .sidebar .menu-up .playlist .list ul li:first-child:hover {
+    padding-left: 30px;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2):hover {
+    padding-left: 30px;
+}
+
+.container .main-content .sidebar .menu-up .playlist .list ul li:hover p:first-child {
     color: var(--white-color);
 }
 
@@ -178,6 +191,7 @@ svg {
 
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2) {
     align-items: center;
+    cursor: pointer;
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li p {
@@ -335,7 +349,7 @@ svg {
 }
 
 /* HOVER TOPBAR */
-.container .main-content .content .topbar .menu ul li:hover a{
+.container .main-content .content .topbar .menu ul li:hover a {
     color: var(--white-color);
 }
 
