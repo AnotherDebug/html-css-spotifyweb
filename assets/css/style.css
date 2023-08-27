@@ -712,17 +712,38 @@ svg {
 .container .player .menu .menu-center .progress-bar .time-bar {
     width: 100%;
     background-color: rgba(128, 128, 128, 0.516);
-    padding: 1px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
-.fill {
-    display: block;
-    height: 4px;
+.container .player .menu .menu-center .progress-bar .time-bar .progress .fill {
+    align-items: center;
+    justify-content: flex-end;
+    height: 5px;
     background-color: lightgray;
     border-radius: 3px;
     width: 25%;
 }
+
+/* hover time bar */
+
+.container .player .menu .menu-center .progress-bar .time-bar .progress .point {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.container .player .menu .menu-center .progress-bar .time-bar:hover .fill {
+    background-color: #adff2e;
+}
+
+.container .player .menu .menu-center .progress-bar .time-bar:hover .point {
+    display: block;
+}
+
+/* hover time bar */
 
 /* /time bar */
 
@@ -757,7 +778,7 @@ svg {
     border-radius: 3px;
 }
 
-.fill {
+.container .player .menu .menu-right .progress-bar .volume-bar .progress .fill {
     display: block;
     height: 4px;
     background-color: lightgray;
