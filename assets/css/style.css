@@ -586,7 +586,7 @@ svg {
 /* MENU LEFT */
 .container .player .menu .menu-left {
     align-items: center;
-    width: 200px;
+    width: 250px;
 }
 
 /* img */
@@ -753,10 +753,11 @@ svg {
 /* MENU RIGHT */
 .container .player .menu .menu-right {
     align-items: center;
-    width: 200px;
+    width: 250px;
 }
 
 .container .player .menu .menu-right i {
+    font-size: 12px;
     padding: 0 10px;
 }
 
@@ -780,7 +781,7 @@ svg {
     height: 5px;
     background-color: lightgray;
     border-radius: 3px;
-    width: 15%;
+    width: 25%;
 }
 
 /* hover volume bar */
