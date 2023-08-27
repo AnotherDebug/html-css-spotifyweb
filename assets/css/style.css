@@ -687,9 +687,12 @@ svg {
 /* /commands */
 
 /* progress bar */
-.container .player .menu .menu-center .progress-bar .local-time,
-.total-time {
-    padding: 0 20px;
+.container .player .menu .menu-center .progress-bar .local-time {
+    padding-right: 15px;
+}
+
+.container .player .menu .menu-center .progress-bar .total-time {
+    padding-left: 15px;
 }
 
 .container .player .menu .menu-center .progress-bar .local-time p,
@@ -758,7 +761,9 @@ svg {
 
 .container .player .menu .menu-right i {
     font-size: 12px;
-    padding: 0 10px;
+    padding: 0 5px;
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 /* volume bar */
@@ -981,6 +986,7 @@ svg {
     .player .menu .menu-left .favorite {
         flex-direction: column;
     }
+
     /* /PLAYER */
 
     /* /CONTAINER */
