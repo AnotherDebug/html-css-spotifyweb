@@ -771,9 +771,12 @@ padding-right: 10px;
     width: 250px;
 }
 
+.container .player .menu .menu-right .list, .menu-right .display, .menu-right .volume {
+    width: 15%;
+}
+
 .container .player .menu .menu-right i {
     font-size: 12px;
-    padding: 0 5px;
     color: var(--white-color);
     text-decoration: none;
 }
