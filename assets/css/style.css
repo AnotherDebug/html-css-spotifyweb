@@ -848,6 +848,10 @@ svg {
         width: calc(100% / 4);
     }
 
+    .container .main-content .content .played .cards .card:nth-child(6), .played .cards .card:nth-child(5) {
+        display: none;
+    }
+
     /* /played */
 
     /* tips */
@@ -891,6 +895,10 @@ svg {
     /* played */
     .container .main-content .content .played .cards .card {
         width: calc(100% / 2);
+    }
+
+    .container .main-content .content .played .cards .card:nth-child(4), .played .cards .card:nth-child(3) {
+        display: none;
     }
 
     /* played */
