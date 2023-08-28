@@ -22,7 +22,11 @@ svg {
 /* COLORS */
 :root {
     --white-color: #ffffff;
-    --gray-color: #7d7f84;
+    --lightgray-color: #D3D3D3;
+    --gray-color: #808080;
+    --darkgray-color: #282828;
+    --acidgreen-color: #adff2e;
+    --black-color: #000;
 }
 
 /* /COLORS */
@@ -35,31 +39,18 @@ svg {
  ************************************************/
 
 
-/* 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-} */
-
-
 .d-flex {
     display: flex;
 }
 
-/* todo: inserire qui row,col,text */
 
-/* !"DEBUG" DA ELIMINARE TERMINATO IL CODICE*/
-.debug {
-    background-color: rgba(0, 102, 255, 0.5);
-    border: 1px solid #000;
-}
-
-/* !CONTROLLARE SE VA IN HOVER O ACTIVE */
 .active:hover {
     border-left: 3px solid #adff2e;
 }
 
-
+h5 {
+    padding: 10px 0;
+}
 
 
 /************************************************
@@ -69,7 +60,7 @@ svg {
 
 /* CONTAINER */
 .container {
-    background-color: #000;
+    background-color: var(--black-color);
 }
 
 /* MAIN CONTENT */
@@ -92,7 +83,7 @@ svg {
 
 .container .main-content .sidebar .menu-up .logo .title h1 {
     padding-left: 10px;
-    color: lightgray;
+    color: var(--lightgray-color);
 }
 
 .container .main-content .sidebar .menu-up .home {
@@ -120,7 +111,7 @@ svg {
 .container .main-content .sidebar .menu-up .home ul li a {
     text-decoration: none;
     padding-left: 10px;
-    color: lightgray;
+    color: var(--lightgray-color);
     font-weight: 600;
 }
 
@@ -157,7 +148,7 @@ svg {
 
 .container .main-content .sidebar .menu-up .playlist .list ul li i {
     font-size: 50px;
-    color: gray;
+    color: var(--gray-color);
 }
 
 /* HOVER PLAYLIST */
@@ -179,10 +170,7 @@ svg {
     color: var(--white-color);
 }
 
-.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2):hover i {
-    color: inherit;
-}
-
+.container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2):hover i,
 .container .main-content .sidebar .menu-up .playlist .list ul li:nth-child(2):hover p {
     color: inherit;
 }
@@ -195,7 +183,7 @@ svg {
 }
 
 .container .main-content .sidebar .menu-up .playlist .list ul li p {
-    color: gray;
+    color: var(--gray-color);
     cursor: pointer;
     font-weight: 600;
 }
@@ -219,13 +207,13 @@ svg {
 .container .main-content .sidebar .menu-down .user {
     align-items: flex-end;
     padding-bottom: 5px;
-    border-top: 1px solid gray;
+    border-top: 1px solid var(--gray-color);
 }
 
 .container .main-content .sidebar .menu-down .user svg {
     width: 25px;
     height: 25px;
-    background-color: gray;
+    background-color: var(--gray-color);
     border-radius: 50%;
 }
 
@@ -240,7 +228,7 @@ svg {
 }
 
 .container .main-content .sidebar .menu-down .install a {
-    color: gray;
+    color: var(--gray-color);
     font-weight: 600;
 }
 
@@ -339,8 +327,6 @@ svg {
 }
 
 /* HOVER TOPBAR */
-
-
 .container .main-content .content .topbar .menu ul li a {
     text-decoration: none;
     color: var(--gray-color);
@@ -354,6 +340,7 @@ svg {
 }
 
 /* /HOVER TOPBAR */
+
 
 /* played */
 .container .main-content .content .played {
@@ -381,7 +368,6 @@ svg {
     width: 100%;
 }
 
-
 /* HOVER PLAYED */
 .container .main-content .content .played .cards .card a .img {
     position: relative;
@@ -402,27 +388,20 @@ svg {
     padding: 45%;
 }
 
-
 /* /HOVER PLAYED */
-
-
-
 
 .container .main-content .content .played .cards .card a {
     text-decoration: none;
     color: var(--white-color);
 }
 
-.container .main-content .content .played .cards .card a h5 {
-    padding: 15px 0;
-}
-
 .container .main-content .content .played .cards .card a p {
-    color: gray;
+    color: var(--gray-color);
     font-size: 10px;
 }
 
 /* /played */
+
 
 /* tips */
 .container .main-content .content .tips {
@@ -481,21 +460,13 @@ svg {
 
 /* /HOVER TIPS */
 
-.container .main-content .content .tips .cards .card a h5 {
-    padding: 15px 0;
-}
-
 .container .main-content .content .tips .title p {
-    color: gray;
-    font-size: 10px
-}
-
-.container .main-content .content .tips .cards .card a p {
-    color: gray;
+    color: var(--gray-color);
     font-size: 10px
 }
 
 /* /tips */
+
 
 /* artists */
 .container .main-content .content .artists {
@@ -556,22 +527,12 @@ svg {
     color: var(--white-color);
 }
 
-.container .main-content .content .artists .cards .card a h5 {
-    padding: 15px 0;
-}
-
 .container .main-content .content .artists .title p {
-    color: gray;
-    font-size: 10px
-}
-
-.container .main-content .content .artists .cards .card a p {
-    color: gray;
+    color: var(--gray-color);
     font-size: 10px
 }
 
 /* /artists */
-
 
 /* /Content */
 
@@ -581,7 +542,7 @@ svg {
 /* PLAYER */
 .container .player {
     height: 90px;
-    background-color: #282828;
+    background-color: var(--darkgray-color);
 }
 
 .container .player .menu {
@@ -616,6 +577,7 @@ svg {
 
 /* img */
 
+
 /* text */
 .container .player .menu .menu-left .album .text {
     margin-left: 10px;
@@ -629,7 +591,7 @@ svg {
     text-decoration: none;
     font-size: 11px;
     font-weight: 600;
-    color: gray;
+    color: var(--gray-color);
 }
 
 .container .player .menu .menu-left .album .text a:hover {
@@ -640,18 +602,19 @@ svg {
 
 /* /text */
 
+
 /* favorite  */
 .container .player .menu .menu-left {
     justify-content: space-around;
 }
 
 .container .player .menu .menu-left .favorite .heart {
-padding-right: 10px;
+    padding-right: 10px;
 }
 
 .container .player .menu .menu-left .favorite .heart i,
 .folder i {
-    color: gray;
+    color: var(--gray-color);
 }
 
 /* hover favorite */
@@ -665,6 +628,7 @@ padding-right: 10px;
 /* /favorite  */
 
 /* /MENU LEFT */
+
 
 /* MENU CENTER */
 .container .player .menu .menu-center {
@@ -696,6 +660,7 @@ padding-right: 10px;
 /* hover play */
 
 /* /commands */
+
 
 /* progress bar */
 .container .player .menu .menu-center .progress-bar .local-time {
@@ -731,13 +696,12 @@ padding-right: 10px;
     align-items: center;
     justify-content: flex-end;
     height: 5px;
-    background-color: lightgray;
+    background-color: var(--lightgray-color);
     border-radius: 3px;
     width: 25%;
 }
 
 /* hover time bar */
-
 .container .player .menu .menu-center .progress-bar .time-bar .progress .point {
     width: 15px;
     height: 15px;
@@ -748,7 +712,7 @@ padding-right: 10px;
 }
 
 .container .player .menu .menu-center .progress-bar .time-bar:hover .fill {
-    background-color: #adff2e;
+    background-color: var(--acidgreen-color);
 }
 
 .container .player .menu .menu-center .progress-bar .time-bar:hover .point {
@@ -761,7 +725,6 @@ padding-right: 10px;
 
 /* /progress bar */
 
-
 /* MENU CENTER */
 
 
@@ -771,7 +734,9 @@ padding-right: 10px;
     width: 250px;
 }
 
-.container .player .menu .menu-right .list, .menu-right .display, .menu-right .volume {
+.container .player .menu .menu-right .list,
+.menu-right .display,
+.menu-right .volume {
     width: 15%;
 }
 
@@ -799,7 +764,7 @@ padding-right: 10px;
     align-items: center;
     justify-content: flex-end;
     height: 5px;
-    background-color: lightgray;
+    background-color: var(--lightgray-color);
     border-radius: 3px;
     width: 25%;
 }
@@ -814,7 +779,7 @@ padding-right: 10px;
 }
 
 .container .player .menu .menu-right .progress-bar .volume-bar:hover .fill {
-    background-color: #adff2e;
+    background-color: var(--acidgreen-color);
 }
 
 .container .player .menu .menu-right .progress-bar .volume-bar:hover .point {
@@ -824,6 +789,7 @@ padding-right: 10px;
 /* /hover volume bar */
 
 /* /volume bar */
+
 /* /MENU RIGHT */
 
 /* /PLAYER */
@@ -849,7 +815,8 @@ padding-right: 10px;
         width: calc(100% / 4);
     }
 
-    .container .main-content .content .played .cards .card:nth-child(6), .played .cards .card:nth-child(5) {
+    .container .main-content .content .played .cards .card:nth-child(6),
+    .played .cards .card:nth-child(5) {
         display: none;
     }
 
@@ -873,9 +840,6 @@ padding-right: 10px;
 
     /* /MAIN CONTENT */
 
-    /* PLAYER */
-    /* /PLAYER */
-
     /* /CONTAINER */
 }
 
@@ -898,7 +862,8 @@ padding-right: 10px;
         width: calc(100% / 2);
     }
 
-    .container .main-content .content .played .cards .card:nth-child(4), .played .cards .card:nth-child(3) {
+    .container .main-content .content .played .cards .card:nth-child(4),
+    .played .cards .card:nth-child(3) {
         display: none;
     }
 
@@ -920,13 +885,7 @@ padding-right: 10px;
 
     /* /content */
 
-
     /* /MAIN CONTENT */
-
-
-    /* PLAYER */
-    /* /PLAYER */
-
 
     /* /CONTAINER */
 }
